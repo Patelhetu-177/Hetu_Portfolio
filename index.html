@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hetu_Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+
+<nav id="desktop-nav">
+    <div class="logo">Hetu Patel</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Hetu Patel</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/about-pic.jpg" alt="Hetu Patel profile picture" />
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Hetu Patel</h1>
+        <p class="section__text__p2">FullStack web Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Hetu_Resume.pdf')">
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                onclick="location.href='https://www.linkedin.com/in/hetu-patel-61a8b1288/'" />
+            <img src="./assets/github.png" alt="My Github profile" class="icon"
+                onclick="location.href='https://github.com/Patelhetu-177'" />
+            <img src="./assets/leetcode.png" alt="My Leetcode profile" class="icon"
+                onclick="location.href='https://leetcode.com/u/Hetu_patel_17/'" />
+        </div>
+    </div>
+</section>
+
+
+<!--  About Section -->
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+
+    <div class="about-containers uniform-grid">
+        <!-- Education -->
+        <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h2>Education</h2>
+            <p>
+                <strong>Uma Higher Secondary School, Visnagar</strong><br />
+                • Secured <strong>92%</strong> in HSC (2022)<br />
+                • ACPC Rank: <strong>846</strong><br /><br />
+                <strong>B.Tech in ICT</strong>
+                <em>PDEU, Gandhinagar</em>
+                • CGPA: <strong>8.8</strong><br />
+                • Duration: <strong>2022 – Present</strong>
+            </p>
+        </div>
+
+        <!-- Experience -->
+        <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h2>Experience</h2>
+            <p>
+                <strong>Web Developer Intern</strong><br />
+                <a href="./assets/Hetu Patel.pdf"><strong>Cognifyz Technologies</strong></a><br />
+                <em>January 2025 – March 2025</em><br />
+
+                <strong>Full Stack Development Intern</strong><br />
+                <strong>Vikartr Technologies</strong><br />
+                <em>May 2025 – Present</em><br />
+            </p>
+        </div>
+
+
+        <!-- Certifications -->
+        <div class="details-container">
+            <img src="./assets/certificate.png" alt="Certifications icon" class="icon" />
+            <h2>Certifications</h2>
+            <p>
+                <strong>META</strong> – Backend Development Specialization<br />
+                <br />
+                <a href="./assets/Certificate.jpg"><strong>Johns Hopkins University</strong></a> – Frontend Web
+                Development<br />
+                <br />
+                <strong>Smart India Hackathon (SIH) 2024</strong> – College level Finalist (Cyber Triage Tool
+                Project)
+            </p>
+        </div>
+
+
+        <!-- Other Achievements -->
+        <div class="details-container">
+            <img src="./assets/achieve.jpeg" alt="Achievements icon" class="icon" />
+            <h2>Achievements</h2>
+            <p>
+                • Solved <strong>350+ Data Structures & Algorithms</strong> problems on
+                <a href="https://leetcode.com/u/Hetu_patel_17/"><strong>LeetCode</strong></a>
+                <br /><br />
+                • Solved <strong>50+ SQL/DBMS</strong> problems with query optimization focus
+                <br /><br />
+                • Regular participant in online coding contests and hackathons
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Bio Paragraph -->
+    <div class="text-container" style="margin-top: 2rem;">
+        <p>
+            I’m an ICT Engineering student and full-stack developer with a passion for building scalable, efficient
+            web applications. My work blends algorithmic thinking and intuitive UI design with robust backend
+            development, shaped through real-world projects, internships, and national-level hackathons.
+            <br /><br />
+
+            I actively participate in competitive programming and have solved 350+ DSA problems on platforms like <a
+                href="https://leetcode.com/u/Hetu_patel_17/" target="_blank"><strong>LeetCode</strong></a>, honing
+            my problem-solving skills and logical thinking. My development experience spans the full stack—working
+            with modern frameworks like Next.js, Express, MongoDB, and TailwindCSS to build clean, performant, and
+            production-ready applications.<br /><br />
+        </p>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+</section>
+
+
+<br />
+<br/>
+<!-- Experience section -->
+<section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>shadcn</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>TypeScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>TailwindCSS
+                            </h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>MongoDB</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Node JS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Express JS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>NextJS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Postman</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Git</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+</section>
+
+
+<br />
+<br/>
+<!-- Projects section -->
+<section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/avatarai.png" alt="Project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">AvatarAI</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Patelhetu-177/AvatarAI'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://avatar-ai-swart.vercel.app//'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/namaste.png" alt="Project 2" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Namaste</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Patelhetu-177/Namaste'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://namaste-chatapp.onrender.com/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/musicera.png" alt="Project 3" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">MusicEra</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Patelhetu-177/musicera'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://musicera.vercel.app/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+</section>
+
+
+<!-- Contact section -->
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+            <p><a href="mailto:hetup9432@gmail.com">hetu.alk.patel@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+            <p><a href="https://www.linkedin.com/in/hetu-patel-61a8b1288/">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2025 Hetu Patel. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>
